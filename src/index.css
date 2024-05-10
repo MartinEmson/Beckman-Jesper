@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* {
+  font-family: new-science, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+} */
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will ensure that the aspect ratio of the video is maintained */
+}
+
+
+.bg-blue {
+  background-color: blue;
+  transition: background-color 2s ease;
+}
+
+.bg-green {
+  background-color: rgb(116,250,75);
+  transition: background-color 1.8s ease;
+}
+
+.bg-cyan {
+  background-color: rgb(116,250,250);
+  transition: background-color 1.8s ease;
+}
+
+.bg-yellow {
+  background-color: yellow;
+  transition: background-color 4s ease;
+}
+
+.bg-black {
+  background-color: black;
+  transition: background-color 1.8s ease;
+}
