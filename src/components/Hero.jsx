@@ -182,6 +182,7 @@ useEffect(() => {
     playsinline
     ref={videoRef}
     src={isReversed ? reversedVideos[reversedVideos.length - 1 - currentVideoIndex] : videos[currentVideoIndex]}  
+    preload='auto'
     className='object-cover'
     style={{ opacity: 0 }}
   />
