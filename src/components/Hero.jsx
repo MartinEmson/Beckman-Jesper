@@ -181,7 +181,8 @@ useEffect(() => {
     src={isReversed ? reversedVideos[reversedVideos.length - 1 - currentVideoIndex] : videos[currentVideoIndex]}  
     preload='auto'
     muted 
-    webkit-playsinline playsinline
+    webkit-playsinline 
+    playsinline
     className='object-cover'
     style={{ opacity: 0 }}
   />
