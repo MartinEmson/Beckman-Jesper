@@ -3,10 +3,13 @@ import Lenis from 'lenis'
 import Hero from './components/Hero';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Answer from './components/Answer';
+import { ReactLenis, useLenis } from 'lenis/react'
 
 
 const App = () => {
 
+
+  
   useEffect(() => {
     const lenis = new Lenis();
   
@@ -19,12 +22,14 @@ const App = () => {
   }, []); // Empty dependency array to run this effect only once on mount
 
 
+ 
+
   return (
     <Router>
       <main>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/book/:index" element={<Answer />} />
+          <Route path="/:index" element={<Answer />} />
           {/* define other routes here */}
         </Routes>
       </main>
