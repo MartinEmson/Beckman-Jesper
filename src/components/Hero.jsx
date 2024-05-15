@@ -3,9 +3,9 @@ import video1 from '../assets/CLEAN/1.mp4';
 import video2 from '../assets/CLEAN/2.mp4';
 import video3 from '../assets/CLEAN/3.mp4';
 import video4 from '../assets/CLEAN/4.mp4';
-import rev1 from '../assets/CLEANREV/rev1.mp4'
-import rev2 from '../assets/CLEANREV/rev2.mp4'
-import rev3 from '../assets/CLEANREV/rev3.mp4'
+import rev1 from '../assets/CLEANREV/rev1.mp4';
+import rev2 from '../assets/CLEANREV/rev2.mp4';
+import rev3 from '../assets/CLEANREV/rev3.mp4';
 import answers from '../answers.jsx';
 import { Link } from 'react-router-dom';
 import '../index.css'
