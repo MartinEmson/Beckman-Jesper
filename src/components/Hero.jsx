@@ -178,8 +178,8 @@ useEffect(() => {
 <Link to={`/${currentVideoIndex + 1}`} className='w-full h-full'>
   <video 
     muted 
-    webkit-playsinline 
-    playsinline
+    webkit-playsInline 
+    playsInline
     ref={videoRef}
     src={isReversed ? reversedVideos[reversedVideos.length - 1 - currentVideoIndex] : videos[currentVideoIndex]}  
     preload='auto'
