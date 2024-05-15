@@ -8,6 +8,11 @@
   font-weight: 100;
 } */
 
+body {
+  font-family: 'MyFont', fallback, sans-serif;
+  height: 100%;
+  overflow: auto;
+}
 video {
   width: 100%;
   height: 100%;
@@ -38,4 +43,11 @@ video {
 .bg-black {
   background-color: black;
   transition: background-color 1.8s ease;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url('/src/assets/Font/Futura\ Std\ Book.ttf');
+  font-display: swap;
+
 }
