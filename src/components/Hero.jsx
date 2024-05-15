@@ -157,7 +157,7 @@ useEffect(() => {
   </div>
 </nav>
 <div id="content" className="flex justify-center top-0 items-center">
-<div className='h-72 w-16 md:w-72'>
+<div className='h-72 w-16 md:w-72 flex md:justify-center md:items-center'>
 {currentVideoIndex > 0 && (
     <button 
     id="left" 
@@ -177,6 +177,7 @@ useEffect(() => {
 >      
 <Link to={`/${currentVideoIndex + 1}`} className='w-full h-full'>
   <video 
+    webkit-playsinline playsinline
     ref={videoRef}
     src={isReversed ? reversedVideos[reversedVideos.length - 1 - currentVideoIndex] : videos[currentVideoIndex]}  
     preload='auto'
@@ -186,7 +187,7 @@ useEffect(() => {
   />
 </Link>
 </div>
-<div className='h-72 w-16 md:w-72'>
+<div className='h-72 w-16 flex md:justify-center md:items-center md:w-72'>
   {currentVideoIndex < videos.length - 1 && (
     <button 
     id="right" 
