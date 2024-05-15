@@ -47,7 +47,7 @@ video {
 
 @font-face {
   font-family: myFont;
-  src: url('/src/assets/Font/Futura\ Std\ Book.ttf');
+  src: url('/assets/Font/Futura\ Std\ Book.ttf');
   font-display: swap;
 
 }
