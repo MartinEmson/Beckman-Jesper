@@ -17,7 +17,7 @@ const Answer = () => {
 
   return (
     <div id="content" className='bg-white text-white w-full min-h-full flex relative'>
-      <div className='flex-col mx-auto w-5/6 text-center mt-10'>
+      <div className='flex-col mx-auto w-5/6 min-h-screen text-center mt-10'>
         <h1 className='text-4xl'>{answer.title}</h1>
         {/* <p>{answer.content}</p> */}
         
