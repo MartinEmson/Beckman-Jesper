@@ -6,6 +6,11 @@ const Answer = () => {
   const navigate = useNavigate();
   const answer = answers[index - 1];
 
+  if (!answer) {
+    navigate('/404');
+    return null;
+  }
+
   const handleExit = () => {
     navigate(-1);
   }
