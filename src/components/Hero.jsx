@@ -96,7 +96,7 @@ const handlePrev = () => {
 // })
 
 
-
+// GSAP
 useEffect(() => {
   const titles = gsap.utils.toArray('p');
   const tl = gsap.timeline();
@@ -139,6 +139,8 @@ useEffect(() => {
     }
   }, [currentVideoIndex, isReversed, reversedVideos, videos]);
 
+
+
   
   return (
     <div className="h-screen w-full bg-white flex flex-col items-center justify-center pt-20 md:pt-0">
@@ -176,16 +178,24 @@ useEffect(() => {
   style={{ height: '510px' }}
 >      
 <Link to={`/${currentVideoIndex + 1}`} className='w-full h-full'>
-  <video 
+  {/* <video 
     muted 
     webkit-playsInline 
     playsInline
     ref={videoRef}
     src={isReversed ? reversedVideos[reversedVideos.length - 1 - currentVideoIndex] : videos[currentVideoIndex]}  
-    preload='auto'
+    preload='true'
     className='object-cover'
     style={{ opacity: 0 }}
-  />
+  /> */}
+    <video 
+      muted 
+      playsInline
+      ref={videoRef}
+      preload='none'
+      className='object-cover'
+      style={{ opacity: 0 }}
+    />
 </Link>
 </div>
 <div className='h-72 w-16 flex md:justify-center md:items-center md:w-72'>
