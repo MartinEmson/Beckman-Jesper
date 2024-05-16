@@ -11,10 +11,10 @@ const Answer = () => {
   }
 
   return (
-    <div id="content" className='bg-white text-white w-full h-screen flex relative'>
+    <div id="content" className='bg-white text-white w-full min-h-full flex relative'>
       <div className='flex-col mx-auto w-5/6 text-center mt-10'>
         <h1 className='text-4xl'>{answer.title}</h1>
-        <p>{answer.content}</p>
+        {/* <p>{answer.content}</p> */}
         
         <div className='grid grid-cols-3 gap-6 mt-10'>
   {answer.images.map((image, i) => {
@@ -29,6 +29,8 @@ const Answer = () => {
         alt="" 
         className='bg-black w-full h-auto'
         style={{
+          maxHeight: '600px',
+          maxWidth: '600px',
           gridColumn: `span ${randomColSpan}`,
           gridRow: `span ${randomRowSpan}`
         }}
